@@ -5,12 +5,13 @@ import { movies } from './movies';
 
 export default function Linkto() {
    const {ID}=useParams();
-    const movieId = movies.find((e)=> e.id === Number(ID));
+    const movieId = movies.find((e)=> e.id == Number(ID));
+    console.log('movieid',movieId)
   return (
     <div>
 
-    <h1>{movies.title} </h1>
-    <p>{movies.description}</p>
+    <h1>{movieId.title} </h1>
+    <p>{movieId.description}</p>
       
     </div>
   )

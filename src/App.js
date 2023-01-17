@@ -29,10 +29,9 @@ function App() {
     <Navbaar />
     <Filter  setSearch={setSearch}  setRate={setRate} rate={rate} />
     <AddMovie  addHandler={addHandler}  />
-    <MovieList movieList={movieList} search={search} rate={rate}/>
     <Routes>
 <Route path='/'  element= {<MovieList movieList={movieList} search={search} rate={rate}/>}  />
-<Route path='/movies/:ID' element={<Linkto  />}  />
+<Route path='/movies/:ID' element={<Linkto/>}  />
 </Routes>
     
     

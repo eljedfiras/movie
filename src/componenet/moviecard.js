@@ -15,7 +15,7 @@ export default function MovieCard({movie}) {
          
         </Card.Text>
         <RateMovie rate={movie.rate} />
-        <Link to={`/movie${movie.id}`} ><Button variant="primary">Movie Details</Button></Link> 
+        <Link to={`/movies/${movie.id}`} ><Button variant="primary">Movie Details</Button></Link> 
       </Card.Body>
       
     </Card>
